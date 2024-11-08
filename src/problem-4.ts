@@ -37,10 +37,10 @@
         height: 10
     };
 
-    const result1 = calculateShapeArea(myCircle);
-    const result2 = calculateShapeArea(myRectangle);
-    console.log(result1);
-    console.log(result2)
+    const circleArea = calculateShapeArea(myCircle);
+    const rectangleArea = calculateShapeArea(myRectangle);
+    console.log(circleArea);
+    console.log(rectangleArea);
 
 
 

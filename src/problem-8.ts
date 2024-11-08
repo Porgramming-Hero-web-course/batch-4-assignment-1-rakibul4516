@@ -1,8 +1,8 @@
 {
     // Problem-8
 
-    function validateKeys<T>(obj: T, keys: (keyof T)[]): boolean {
-        return keys.every(key => key in obj);
+    function validateKeys<T>(object: T, keys: (keyof T)[]): boolean {
+        return keys.every(key => key in object);
       }
       
       const person = {
@@ -11,8 +11,8 @@
         email: 'rakibul@gmail.com'
       };
 
-      
-      console.log(validateKeys(person, ['name', 'age', 'email'])); 
+      const myKeys = validateKeys(person, ['name', 'age', 'email']);
+      console.log(myKeys); 
       
       
 

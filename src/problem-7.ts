@@ -2,12 +2,12 @@
     //Problem-7
     
     class Car {
-        make: string;
+        name: string;
         model: string;
         year: number;
       
-        constructor(make: string, model: string, year: number) {
-          this.make = make;
+        constructor(name: string, model: string, year: number) {
+          this.name = name;
           this.model = model;
           this.year = year;
         }
@@ -19,7 +19,7 @@
       }
       
       
-      const myCar = new Car('Toyota', 'Corolla', 2015);
+      const myCar = new Car('Toyota', 'Corolla', 2018);
       const carAge = myCar.getCarAge()
       console.log(`The car's age is: ${carAge} years.`);
       

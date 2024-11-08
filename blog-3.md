@@ -1,9 +1,11 @@
-Blog-3 : Why are Type Guards Necessary? Discuss Various Types of Type Guards and Their Use Cases.
 
-In typescript, type guards are necessary because they help the TypeScript compiler understand the type of a variable at runtime. TypeScript is a statically typed language, but sometimes it cannot determine the exact type of a variable. Type guards help in narrowing down the type of a variable so that we can safely access its properties or methods without causing errors. There are different types of type guards. For example: typeof, instanceof, in.
+# Blog-3: Why are Type Guards Necessary? Discuss Various Types of Type Guards and Their Use Cases
 
-Use cases of "typeof" type guard:
+In TypeScript, type guards are necessary because they help the TypeScript compiler understand the type of a variable at runtime. TypeScript is a statically typed language, but sometimes it cannot determine the exact type of a variable. Type guards help in narrowing down the type of a variable so that we can safely access its properties or methods without causing errors. There are different types of type guards, such as `typeof`, `instanceof`, and `in`.
 
+## Use Cases of `typeof` Type Guard
+
+```typescript
 function printLength(value: string | number) {
   if (typeof value === 'string') {
     console.log(value.length);
@@ -15,9 +17,9 @@ function printLength(value: string | number) {
 printLength("Hello");
 printLength(123.456);
 
+## Use Cases of `instanceof` Type Guard
 
-Use cases of "instanceof" type guard:
-
+```typescript
 class Dog {
   bark() {
     console.log("Woof");
@@ -42,8 +44,9 @@ makeSound(new Dog());
 makeSound(new Cat());
 
 
+## Use Cases of `in` Type Guard
 
-Use cases of "in" type guard:
+```typescript
 
 interface User {
   name: string;

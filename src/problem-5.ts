@@ -6,9 +6,9 @@
     }
     
     const person = {
-        name: 'Alice',
-        age: 30,
-        job: 'Engineer'
+        name: 'Rakibul',
+        age: 25,
+        job: 'Developer'
     };
     
     const name = getProperty(person, 'name'); 
